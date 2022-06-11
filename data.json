@@ -1,0 +1,108 @@
+{
+    "commands": {
+        "open": ["ouvre", "ouvres", "ouvrir", "lance", "lancer", "lancé","lens"],
+        "write": ["ecris", "ecrit", "ecrire", "écrit", "écrire", "tape", "taper", "tapé"],
+        "maximize": ["maximise", "maximises", "maximiser", "maximisé", "agrandis", "agrandie", "agrandir", "agrandi"],
+        "minimize": ["minimise", "cache", "caches", "cacher", "caché", "enlève", "enlever", "enlevé"],
+        "stop": ["stop", "arrête-toi"],
+        "foreground": ["premier plan","montre", "montres", "montrer", "montré","affiche","affiches","afficher","affiché"],
+        "lookup": ["check","regarde","regarder","regardé","cherche","chercher","cherché"],
+        "goto": ["va", "aller"],
+        "playMusic": ["joue", "joues", "jouer", "joué", "met", "mettre", "mais"],
+        "close": ["ferme", "fermes", "fermer", "fermé", "arrête", "arrêter", "arrêté"],
+        "restart": ["redémarre", "redémarrer", "restart"]
+    },
+
+    "applications": {
+        "Chrome": {
+            "keywords": ["chrome"],
+            "window_name": "Google Chrome",
+            "commands_to_start": [
+                {
+                    "cmd": "google-chrome > /dev/null 2>&1 & disown > /dev/null 2>&1",
+                    "error_output": "",
+                    "error_msg": ""
+                }
+            ]
+        },
+        "Mozilla Firefox": {
+            "keywords": ["firefox", "mozilla"],
+            "window_name": "Mozilla Firefox",
+            "commands_to_start": [
+                {
+                    "cmd": "firefox > /dev/null 2>&1 & disown > /dev/null 2>&1",
+                    "error_output": "",
+                    "error_msg": ""
+                }
+            ]
+        },
+        "Visual Studio Code": {
+            "keywords": ["code"],
+            "window_name": "Visual Studio Code",
+            "commands_to_start": [
+                {
+                    "cmd": "code",
+                    "error_output": "",
+                    "error_msg": ""
+                }
+            ]
+        },
+        "scrcpy": {
+            "keywords": ["mon téléphone"],
+            "window_name": "SM-A326B",
+            "commands_to_start": [
+                {
+                    "cmd": "adb connect 192.168.1.134:5555",
+                    "error_output": "failed",
+                    "error_msg": "Connexion au téléphone échouée"
+                },
+                {
+                    "cmd": "scrcpy > /dev/null 2>&1 & disown > /dev/null 2>&1",
+                    "error_output": "",
+                    "error_msg": ""
+                }
+            ]
+        },
+        "Discord": {
+            "keywords": ["discord"],
+            "window_name": "Discord",
+            "commands_to_start": [
+                {
+                    "cmd": "discord",
+                    "error_output": "",
+                    "error_msg": ""
+                }
+            ]
+        },
+        "League of Legends": {
+            "keywords": ["league", "ligue", "legend", "légende"],
+            "window_name": "League of Legends",
+            "commands_to_start": [
+                {
+                    "cmd": "env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/1 > /dev/null 2>&1 & disown > /dev/null 2>&1",
+                    "error_output": "",
+                    "error_msg": ""
+                }
+            ]
+        }
+    },
+
+    "websites": {
+        "youtube": {
+            "keywords": ["youtube"],
+            "website_url": "https://www.youtube.com"
+        },
+        "twitch": {
+            "keywords": ["twitch"],
+            "website_url": "https://www.twitch.tv"
+        },
+        "github": {
+            "keywords": ["github"],
+            "website_url": "https://www.github.com"
+        },
+        "netflix": {
+            "keywords": ["netflix"],
+            "website_url": "https://www.netflix.com/browse"
+        }
+    }
+}
