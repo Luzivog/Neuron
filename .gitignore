@@ -1,4 +1,8 @@
+# Model used for speech recognition
 model/
+
+# test.py is used for tests
+test.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
