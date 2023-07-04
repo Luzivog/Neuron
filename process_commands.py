@@ -105,7 +105,7 @@ def playMusic(speech):
 
 def stop(speech):
     if speech == "":
-        speak("Au revoir.")
+        speak("Bye.")
         exit()
 
 def restart(speech):
@@ -130,6 +130,3 @@ def getElement(text, elemType):
                         "window_name": data[elemType][elem]["window_name"],
                         "command_to_start": data[elemType][elem]["commands_to_start"]
                     }
-
-def getWindowID(window_name):
-    window_list = subprocess.getoutput("wmctrl -l")

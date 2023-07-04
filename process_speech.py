@@ -7,14 +7,14 @@ def take_speech(speech):
     global activated
     print(speech)
 
-    if speech == "néron" or speech == "nero" or speech == "neon":
-        speak("Oui ?")
+    if speech in data["trigger"]:
+        speak("Yes ?")
         activated = True
 
-    elif "néron" in speech or activated:
+    elif "neuron" in speech or activated:
         if not activated:
             speech = speech.split(" ")
-            speech.remove("néron")
+            speech.remove("neuron")
             speech = " ".join(speech)
         print(speech)
 
@@ -33,12 +33,12 @@ def take_speech(speech):
             if cmd != "": break
         
         if cmd == "":
-            speak("Je n'ai pas compris.")
+            speak("I didn't understand.")
             return
         else:
             print("=> Detected command :", cmd)
             print("=> Detected speech :", speech)
             error = eval(cmd + '("' + speech+ '")')
-            if error: speak("Je n'ai pas compris.")
+            if error: speak("I didn't understand.")
             else: activated = False
             return

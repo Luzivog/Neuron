@@ -1,5 +1,5 @@
-# Néron
-Néron is a voice assistant that interacts with your voice using [Vosk](https://github.com/alphacep/vosk) for Speech Recognition. 
+# Neuron
+Neuron is a voice assistant that interacts with your voice using [Vosk](https://github.com/alphacep/vosk) for Speech Recognition. 
 
 It has many practical uses such as :
 - Starting / Closing applications

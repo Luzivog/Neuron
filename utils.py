@@ -2,7 +2,7 @@ from gtts import gTTS
 import os
 
 def speak(txt):
-    tts = gTTS(text=txt, lang='fr')
+    tts = gTTS(text=txt, lang='en')
     tts.save("rep.mp3")
     os.system("mplayer rep.mp3 > /dev/null 2>&1")
 

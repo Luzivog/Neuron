@@ -1,21 +1,27 @@
 {
+    "trigger": [
+        "neuron",
+        "naren",
+        "hey neuron",
+        "hey naren"
+    ],
     "commands": {
-        "open": ["ouvre", "ouvres", "ouvrir", "lance", "lancer", "lancé","lens"],
-        "write": ["ecris", "ecrit", "ecrire", "écrit", "écrire", "tape", "taper", "tapé"],
-        "maximize": ["maximise", "maximises", "maximiser", "maximisé", "agrandis", "agrandie", "agrandir", "agrandi"],
-        "minimize": ["minimise", "cache", "caches", "cacher", "caché", "enlève", "enlever", "enlevé"],
-        "stop": ["stop", "arrête-toi"],
-        "foreground": ["premier plan","montre", "montres", "montrer", "montré","affiche","affiches","afficher","affiché"],
-        "lookup": ["check","regarde","regarder","regardé","cherche","chercher","cherché"],
-        "goto": ["va", "aller"],
-        "playMusic": ["joue", "joues", "jouer", "joué", "met", "mettre", "mais"],
-        "close": ["ferme", "fermes", "fermer", "fermé", "arrête", "arrêter", "arrêté"],
-        "restart": ["redémarre", "redémarrer", "restart"]
+        "open": ["open", "start"],
+        "write": ["write", "type"],
+        "maximize": ["maximise", "bigger"],
+        "minimize": ["minimise", "hide"],
+        "stop": ["stop"],
+        "foreground": ["foreground","show"],
+        "lookup": ["check", "lookup","look"],
+        "goto": ["go"],
+        "playMusic": ["play", "put"],
+        "close": ["close"],
+        "restart": ["restart", "reboot"]
     },
 
     "applications": {
         "Chrome": {
-            "keywords": ["chrome"],
+            "keywords": ["chrome", "chrono"],
             "window_name": "Google Chrome",
             "commands_to_start": [
                 {
@@ -37,7 +43,7 @@
             ]
         },
         "Visual Studio Code": {
-            "keywords": ["code"],
+            "keywords": ["code", "vscode"],
             "window_name": "Visual Studio Code",
             "commands_to_start": [
                 {
@@ -48,7 +54,7 @@
             ]
         },
         "scrcpy": {
-            "keywords": ["mon téléphone"],
+            "keywords": ["my phone", "phone"],
             "window_name": "SM-A326B",
             "commands_to_start": [
                 {
@@ -75,7 +81,7 @@
             ]
         },
         "League of Legends": {
-            "keywords": ["league", "ligue", "legend", "légende"],
+            "keywords": ["league", "legends", "legend", "lol"],
             "window_name": "League of Legends",
             "commands_to_start": [
                 {
