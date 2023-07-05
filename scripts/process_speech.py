@@ -11,10 +11,13 @@ def take_speech(speech):
         speak("Yes ?")
         activated = True
 
-    elif "neuron" in speech or activated:
+    elif sum([word in speech for word in data["trigger"]]) > 0 or activated:
         if not activated:
             speech = speech.split(" ")
-            speech.remove("neuron")
+            for word in speech:
+                if word in data["trigger"]:
+                    speech.remove(word)
+                    break
             speech = " ".join(speech)
         print(speech)
 

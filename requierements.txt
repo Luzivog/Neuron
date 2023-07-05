@@ -1,0 +1,8 @@
+pynput==1.7.6
+pywhatkit==5.3
+vosk==0.3.42
+sounddevice==0.4.4
+argparse==1.4.0
+scipy==1.8.1
+gtts==2.2.4
+pyautogui==0.9.53

@@ -3,8 +3,8 @@ import os
 
 def speak(txt):
     tts = gTTS(text=txt, lang='en')
-    tts.save("rep.mp3")
-    os.system("mplayer rep.mp3 > /dev/null 2>&1")
+    tts.save(os.path.dirname(__file__)+"/../assets/rep.mp3")
+    os.system(f"mplayer '{os.path.dirname(__file__)}/../assets/rep.mp3' > /dev/null 2>&1")
 
 def remove_before(strValue, word):
     listOfWords = strValue.split(word, 1)

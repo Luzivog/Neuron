@@ -1,11 +1,8 @@
-#!/usr/bin/env python3
-
 import sounddevice as sd
 import argparse, os, queue, vosk, sys
 from process_speech import take_speech
 
 q = queue.Queue()
-
 
 def int_or_str(text):
     """Helper function for argument parsing."""

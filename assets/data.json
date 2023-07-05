@@ -7,10 +7,10 @@
     ],
     "commands": {
         "open": ["open", "start"],
-        "write": ["write", "type"],
+        "write": ["write", "type", "right"],
         "maximize": ["maximise", "bigger"],
         "minimize": ["minimise", "hide"],
-        "stop": ["stop"],
+        "stop": ["stop", "step"],
         "foreground": ["foreground","show"],
         "lookup": ["check", "lookup","look"],
         "goto": ["go"],

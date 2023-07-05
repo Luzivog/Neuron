@@ -1,14 +1,11 @@
 # Modules to import
 
 from utils import speak
-from pynput.keyboard import Controller
-import webbrowser, json, subprocess, os, sys, pywhatkit
+import webbrowser, json, subprocess, os, sys, pywhatkit, pyautogui
 
 # Variables initialization
 
-keyboard = Controller()
-
-jsonfile = open("data.json")
+jsonfile = open(os.path.dirname(__file__)+"/../assets/data.json")
 data = json.load(jsonfile)
 
 # Functions associated to commands
@@ -48,8 +45,8 @@ def close(speech):
     
 def write(speech):
     if speech == "": return True
-    keyboard.type(speech)
-    
+    pyautogui.write(speech)    
+
     
 def maximize(speech):
     app = getElement(speech, "applications")
