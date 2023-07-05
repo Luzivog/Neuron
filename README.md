@@ -41,7 +41,6 @@ Due to some python libraries not being supported by docker suck as "pywhatkit" I
 ```
 git clone https://github.com/Luzivog/Neuron.git
 cd DeepDoku
-
 ```
 
 ### Install dependencies
