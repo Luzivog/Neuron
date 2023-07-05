@@ -64,7 +64,7 @@ Open a command prompt, make sure you're in the Neuron directory, and run:
 python start.py
 ```
 
-## ✍️ Customzse assistant
+## ✍️ Customize assistant
 All the configuration is done in Neuron/assets/data.json
 You can configure:
 - Trigger words: Words that will trigger the assistant.
