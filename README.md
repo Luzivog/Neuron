@@ -1,7 +1,7 @@
 # Neuron
 
 ## What is this?
-Neuron is a voice assistant that interacts with your voice using [Vosk](https://github.com/alphacep/vosk), an offline speech recognition API.
+Neuron is a voice assistant created for Ubuntu that interacts with your voice using [Vosk](https://github.com/alphacep/vosk), an offline speech recognition API.
 
 ## Project structure
 
