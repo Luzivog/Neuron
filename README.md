@@ -54,7 +54,7 @@ pip install pyaudio==0.2.11 --user
 ```
 
 ### Install model
-Vosk models are available [here](https://alphacephei.com/vosk/models), for better results I choose the "vosk-model-en-us-0.42-gigaspeech" but depending on your machine you may want to consider a lighter model.
+Vosk models are available [here](https://alphacephei.com/vosk/models), for better results I choosed the "vosk-model-en-us-0.42-gigaspeech" but depending on your machine you may want to consider a lighter model.
 After downloading the model, move it to Neuron folder and extract it into a folder that you rename "model".
 
 ### All set!
