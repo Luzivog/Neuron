@@ -34,7 +34,7 @@ Neuron
 
 
 ## ⚙️ Getting started
-Due to some python libraries not being supported by docker suck as "pywhatkit" I didn't set up a DockerFile. However, I'll try to make this installation easy.
+Due to some python libraries not being supported by docker such as "pywhatkit" I didn't set up a DockerFile. However, I'll try to make this installation easy.
 
 ### Clone repository
 
