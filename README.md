@@ -40,7 +40,7 @@ Due to some python libraries not being supported by docker such as "pywhatkit" I
 
 ```
 git clone https://github.com/Luzivog/Neuron.git
-cd DeepDoku
+cd Neuron
 ```
 
 ### Install dependencies
